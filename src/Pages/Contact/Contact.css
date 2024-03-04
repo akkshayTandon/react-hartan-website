@@ -1,0 +1,22 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.FormDark {
+    background-color: rgb(32, 31, 31);
+}
+
+.textWhite {
+    color: #ffffff;
+}
+
+.inputField {
+    label {
+        background-color: #201F1F !important;
+    }
+}
