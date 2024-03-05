@@ -1,5 +1,5 @@
 import { Sidemenu } from "react-hartan";
-import { NavLink, Outlet, useParams } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./Previews.css"
 
 
@@ -69,9 +69,7 @@ export default function Previews() {
     ];
 
     return (
-        <>
             <div className="preview">
-
                 <div className="sidemenu">
                     <Sidemenu navList={list} userNavbarStyle="sidebarHeight" userNavButtonStyle="navBtnStyle"  />
                 </div>
@@ -79,8 +77,6 @@ export default function Previews() {
                 <aside className="aside" id="aside">
                     <Outlet />
                 </aside>
-
             </div>
-        </>
     )
 }

@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { Navbar, Accordion, Button, Card, Carousel, Dropdown, Footer, Form, HeroSection, Popup, Sidemenu, Snippet, Statistics, Team, Testimonial } from "react-hartan"
 import "./Previews.css"
 
-export const Components = [
+const Components = [
     {
         id: "accordion",
         elem: <Accordion />
