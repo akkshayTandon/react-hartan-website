@@ -55,7 +55,7 @@ function App() {
 
   return (
     <>
-      <Navbar navList={list} logoImgSrc={logoImg} userHeaderStyle="bgDark" userLogoStyle="colorWhite fontSize" userNavListItemStyle="colorWhite" userNavButtonSvgColor="colorWhite" userSideBarStyle="bgDark zIndex1" />
+      <Navbar navList={list} logoImgSrc={logoImg} buttonText="Sponsor Us" userHeaderStyle="bgDark" userLogoStyle="colorWhite fontSize" userNavListItemStyle="colorWhite" userNavButtonSvgColor="colorWhite" userSideBarStyle="bgDark zIndex1" />
       <Outlet />
       <Footer userFooterStyle="bgDark footer" userLinksStyle="footerLinks" userFooterLinksStyle=" footerFlex" footerList={arr} userCopyrightStyle="textCenter" />
     </>
