@@ -1,13 +1,13 @@
 import { Sidemenu } from "react-hartan";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useParams } from "react-router-dom";
 import "./Previews.css"
 
 
-export default function Previews({ }) {
+export default function Previews() {
 
     const list = [
         {
-            logo: <NavLink className={({isActive})=>`${isActive&& "isActive"}`} to="accordion"><img src="/dot.svg" /></NavLink>,
+            logo: <NavLink className={({isActive})=>`${isActive&& "isActive"}`} to="accordion"><img src="/dot.svg" className="svg" /></NavLink>,
             elem: <NavLink className={({isActive})=>`${isActive&& "isActive"}`} to="accordion">Accordion</NavLink>
         },
         {
@@ -66,7 +66,7 @@ export default function Previews({ }) {
             logo: <NavLink className={({isActive})=>`${isActive&& "isActive"}`} to="testimonial"><img src="/dot.svg" /></NavLink>,
             elem: <NavLink className={({isActive})=>`${isActive&& "isActive"}`} to="testimonial">Testimonial</NavLink>
         },
-    ]
+    ];
 
     return (
         <>

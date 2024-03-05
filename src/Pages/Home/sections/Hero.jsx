@@ -27,8 +27,8 @@ export default function Hero() {
         <Button buttonText={`version ${latestVersion}`} userButtonStyle="cursorNone" />
       </div>
 
-      <div data-aos="zoom-out" data-aos-duration="1000">
-        <HeroSection userHeroSectionStyle="spacing" userHeroContentStyle="colorWhite" heroAbout={heroAbt} imgState={false} userButtonStyle="none" data-aos="zoom-in" />
+      <div data-aos="zoom-in" data-aos-duration="1000">
+        <HeroSection userHeroSectionStyle="heroSpacing" userHeroContentStyle="colorWhite" heroAbout={heroAbt} imgState={false} userButtonStyle="none" data-aos="zoom-in" />
       </div>
 
       <div className='buttons'  data-aos="fade-up" data-aos-duration="1500">

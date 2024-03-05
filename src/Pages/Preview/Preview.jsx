@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { Navbar, Accordion, Button, Card, Carousel, Dropdown, Footer, Form, HeroSection, Popup, Sidemenu, Snippet, Statistics, Team, Testimonial } from "react-hartan"
 import "./Previews.css"
+
 export const Components = [
     {
         id: "accordion",
@@ -8,7 +9,7 @@ export const Components = [
     },
     {
         id: "button",
-        elem: <Button userButtonStyle="giant"/>
+        elem: <Button userButtonStyle="giant" />
     },
     {
         id: "card",
@@ -24,7 +25,7 @@ export const Components = [
     },
     {
         id: "footer",
-        elem: <Footer userFooterStyle="colorBlack"/>
+        elem: <Footer userFooterStyle="colorBlack" />
     },
     {
         id: "form",
@@ -36,7 +37,7 @@ export const Components = [
     },
     {
         id: "navbar",
-        elem: <Navbar userLogoStyle="colorBlack" userHeaderStyle="fullWidth"/>
+        elem: <Navbar userLogoStyle="colorBlack" userHeaderStyle="fullWidth" />
     },
     {
         id: "popup",
@@ -60,23 +61,22 @@ export const Components = [
     },
     {
         id: "testimonial",
-        elem: <Testimonial userTestimonialStyle="colorBlack"/>
+        elem: <Testimonial userTestimonialStyle="colorBlack" />
     },
 ];
 
-export default function Preview() {
+export default function Preview({ defaultIndex }) {
     const params = useParams();
-    const { id } = params;
-    // const [component, setComponent] = useState(<Navbar />);
-    
-    const index = Components.findIndex((obj) => obj.id === id)
+    const { id = Components[0].id } = params;
+
+    let index = Components.findIndex((obj) => obj.id === id);
 
     return (
         <>
             <h1>{Components[index].id.toUpperCase()}</h1>
             <hr />
             {
-                Components[index].elem
+                Components[index === -1 ? defaultIndex : index]?.elem
             }
         </>
     )

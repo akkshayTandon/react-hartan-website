@@ -28,6 +28,7 @@ body {
   fill: #ffffff;
   color: #ffffff;
 
+  /* navbar link  */
   a {
     color: #ffffff;
   }
@@ -35,47 +36,15 @@ body {
   div li a {
     color: #ffffff;
   }
-
-  h1 {
-    background: linear-gradient(90deg, #E46920, #BA3E47, #782F69, #44408d, #1c2d69);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    font-size: 5rem;
-    place-self: center;
-    text-align: center;
-  }
-
-  div {
-    span {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-    }
-
-    span span:nth-child(1) {
-      font-size: 3.1rem;
-      text-align: center;
-      font-weight: 600;
-    }
-
-    span span:nth-child(2) {
-      font-size: 1.7rem;
-      text-align: center;
-      font-weight: 400;
-    }
-  }
 }
 
+/* navbar logo styling */
 .fontSize span {
   font-size: 2.5rem;
 }
 
-.spacing {
-  padding-top: 3rem;
-}
 
+/* common styling */
 .none {
   display: none;
 }
@@ -90,19 +59,15 @@ body {
     text-decoration: none;
     color: #fff;
   }
-
-  code {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Cascadia Code', sans-serif;
-
-    span {
-      margin-left: 1rem;
-    }
-  }
 }
 
+.textCenter {
+  text-align: center;
+}
+
+.zIndex1 {
+  z-index: 1;
+}
 
 .cursorNone {
   cursor: text;
@@ -112,6 +77,14 @@ body {
   border-bottom: 0.2rem solid #1e90ff;
 }
 
+
+/* footer  */
+
+.footer {
+  box-shadow: 0px -3px 66px -4px rgba(20, 20, 20, 0.75);
+  margin-top: auto;
+  color: #fff;
+}
 
 .footerLinks {
   width: 100%;
@@ -124,9 +97,17 @@ body {
 .footerFlex {
   place-items: center;
 
-  h2 span{
-    flex-direction: row;
-    gap: 0.4rem;
+  h2 {
+    display: flex;
+    padding: 1rem;
+
+    span {
+      gap: 0.4rem;
+
+      a {
+        color: #fff;
+      }
+    }
   }
 
   div {
@@ -137,7 +118,14 @@ body {
   }
 }
 
-.footer {
-  box-shadow: 0px -3px 66px -4px rgba(20, 20, 20, 0.75);
-  margin-top: auto;
+
+/* responsive */
+
+@media(width<440px) {
+  .footerFlex h2 span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

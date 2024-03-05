@@ -1,157 +1,222 @@
-
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    padding: 0 5rem;
-}
-
+/* version btn styling */
 .version {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9rem;
 }
 
 
-.deviceRes {
-    margin-top: 10rem;
-    padding: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 2.5rem;
+/* hero styling */
+.colorWhite {
+  h1 {
+    background: linear-gradient(90deg, #E46920, #BA3E47, #782F69, #44408d, #1c2d69);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    place-self: center;
+    text-align: center;
+  }
 
-    .deviceImg {
-        display: flex;
-        gap: 3rem;
+  div {
+    span {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
     }
+
+    span span:nth-child(1) {
+      font-size: 3.1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    span span:nth-child(2) {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 400;
+      /* border: 2px solid red; */
+      max-width: 75%;
+    }
+  }
+}
+
+.heroSpacing {
+  padding-top: 3rem;
 }
 
 
+/* install and read more btn styling */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 5rem;
+
+  .myBtn {
+    code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cascadia Code', sans-serif;
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+
+/* responsive design section styling */
+.deviceRes {
+  margin-top: 10rem;
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  .deviceImg {
+    display: flex;
+    gap: 3rem;
+  }
+}
 
 .myHero {
-    padding: 0;
+  padding: 0;
 }
 
 .myHeroHeading {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 
+/* features section styling */
 .features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-    margin: 5rem 0;
-  
-    h2 {
-      color: #ffffff;
-      font-size: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin: 5rem 0;
+
+  h2 {
+    color: #ffffff;
+    font-size: 5rem;
+  }
+}
+
+.featuresCard {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+}
+
+.cardStyle {
+  padding-left: 2rem;
+  gap: 0;
+  height: 11rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  figure {
+    img {
+      height: 3rem;
     }
   }
-  
-  .featuresCard {
+}
+
+
+.cardCss div {
+  color: #ffffff;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: #aba7a7;
+    margin-top: .8rem;
+  }
+}
+
+
+/* built with hartan section styling */
+.builtWithHartan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 15rem 0;
+
+  h1 {
+    color: #ffffff;
+    font-size: 3rem;
+  }
+
+  .cardsContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 3rem;
-  }
-
-  .cardStyle {
-    padding-left: 2rem;
-    gap: 0;
-    height: 11rem;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
+    justify-content: space-around;
+    gap: 3rem;
 
-    figure{
-      img{
-        height: 3rem;
-      }
-    }
-  }
-  
-  
-  .cardCss div {
-    color: #ffffff;
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    p {
-      color: #aba7a7;
-      margin-top: .8rem;
+    a {
+      text-decoration: none;
     }
   }
 
-
-  
-.builtWithHartan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 15rem 0;
-  
-    h1 {
-      color: #ffffff;
-      font-size: 3rem;
-    }
-  
-    .cardsContainer {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 3rem;
-  
-      a {
-        text-decoration: none;
-      }
-    }
-  
-    .contentPara {
-      div div{
-        display: none;
-      }
+  .contentPara {
+    div div {
+      display: none;
     }
   }
+}
 
-  @media(width<768px){
 
-    html{
-      font-size: 59%;
-    }
-    .spacing{
-      padding: 3rem 4rem 5rem 4rem;
-    }
-    .deviceRes{
-      padding: 3rem;
-    }
+/* responsive */
+@media(width<768px) {
+
+  html {
+    font-size: 59%;
+  }
+.heroSpacing{
+  padding: 7rem 3rem;
+}
+  .spacing {
+    padding: 3rem 4rem 5rem 4rem;
   }
 
-  @media(width<555px){
-    html{
-      font-size: 50%;
-    }
+  .deviceRes {
+    padding: 3rem;
   }
-  @media(width<471px){
-    html{
-      font-size: 46%;
-    }
+}
+
+@media(width<555px) {
+  html {
+    font-size: 50%;
   }
+}
+
+@media(width<471px) {
+  html {
+    font-size: 46%;
+  }
+  .colorWhite h1{
+    font-size: 4rem;
+  }
+}
