@@ -1,19 +1,8 @@
-import { useState, useEffect } from "react";
-import { HeroSection, Button, useFetch, Snippet } from "react-hartan"
+import { HeroSection, Button, Snippet } from "react-hartan"
+import FetchVersion from "../../../FetchVersion.js";
 
 export default function Hero() {
-
-  const [latestVersion, setLatestVersion] = useState(null);
-
-  // Fetch the latest version of React using a custom hook
-  const [getData] = useFetch();
-  async function getLatestVersion() {
-    const [result] = await getData("https://registry.npmjs.org/react-hartan");
-    setLatestVersion(result["dist-tags"]?.latest)
-  }
-  useEffect(() => {
-    getLatestVersion()
-  }, []);
+  const latestVersion = FetchVersion();
 
   const heroAbt = <span><span>A ready made solution for your next project.</span><span>Hartan is a UI component library built on React JS and distributed as a NPM package. It offers a collection of independent, well-documented resources designed to facilitate rapid website development.</span></span>;
 
@@ -31,8 +20,8 @@ export default function Hero() {
         <HeroSection userHeroSectionStyle="heroSpacing" userHeroContentStyle="colorWhite" heroAbout={heroAbt} imgState={false} userButtonStyle="none" data-aos="zoom-in" />
       </div>
 
-      <div className='buttons'  data-aos="fade-up" data-aos-duration="1500">
-        <Snippet userSnippetStyle="myBtn"/>
+      <div className='buttons' data-aos="fade-up" data-aos-duration="1500">
+        <Snippet userSnippetStyle="myBtn" />
         <Button buttonText={readDocs} userButtonStyle="myBtn" />
       </div>
     </>

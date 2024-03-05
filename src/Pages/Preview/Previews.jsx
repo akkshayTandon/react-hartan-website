@@ -70,11 +70,11 @@ export default function Previews() {
 
     return (
             <div className="preview">
-                <div className="sidemenu">
+                <div className="sidemenu" data-aos="fade-right" data-aos-duration="1000">
                     <Sidemenu navList={list} userNavbarStyle="sidebarHeight" userNavButtonStyle="navBtnStyle"  />
                 </div>
 
-                <aside className="aside" id="aside">
+                <aside data-aos="zoom-in" data-aos-duration="700" className="aside" id="aside">
                     <Outlet />
                 </aside>
             </div>

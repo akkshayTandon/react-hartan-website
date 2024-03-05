@@ -26,15 +26,16 @@ body {
 
 .colorWhite {
   fill: #ffffff;
-  color: #ffffff;
+  color: #c4c3c3;
 
   /* navbar link  */
   a {
-    color: #ffffff;
+    color: #c4c3c3;
   }
 
   div li a {
-    color: #ffffff;
+    color: #c4c3c3;
+
   }
 }
 
@@ -57,7 +58,7 @@ body {
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: #eeecec;
   }
 }
 
@@ -83,7 +84,7 @@ body {
 .footer {
   box-shadow: 0px -3px 66px -4px rgba(20, 20, 20, 0.75);
   margin-top: auto;
-  color: #fff;
+  color: #c4c3c3;
 }
 
 .footerLinks {
@@ -105,7 +106,8 @@ body {
       gap: 0.4rem;
 
       a {
-        color: #fff;
+        color: #c4c3c3;
+        
       }
     }
   }
