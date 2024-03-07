@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 9rem;
+  padding-top: 14rem;
+  z-index: 999;
 }
 
 
@@ -78,20 +79,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 
   .deviceImg {
     display: flex;
     gap: 3rem;
   }
 }
-
+.deviceSVG{
+  fill: var(--PrimaryFontColor);
+}
 .myHero {
   padding: 0;
 }
 
 .myHeroHeading {
-  color: #ffffff;
+  color: var(--PrimaryFontColor);
 }
 
 
@@ -106,7 +109,7 @@
   margin: 5rem 0;
 
   h2 {
-    color: #ffffff;
+    color: #c4c3c3;
     font-size: 5rem;
   }
 }
@@ -139,7 +142,7 @@
 
 
 .cardCss div {
-  color: #ffffff;
+  color: var(--PrimaryFontColor);
 
   h1 {
     font-size: 2rem;
@@ -162,7 +165,7 @@
   margin: 15rem 0;
 
   h1 {
-    color: #ffffff;
+    color: var(--PrimaryFontColor);
     font-size: 3rem;
   }
 
@@ -188,6 +191,12 @@
 
 
 /* responsive */
+@media(width<1024px){
+  .deviceImg{
+    padding-bottom: 5rem;
+  }
+}
+
 @media(width<768px) {
 
   html {

@@ -10,7 +10,7 @@ export default function Blogs() {
 
     return (
         <div className="blog">
-            <h1><span>Latest </span><span>@Hartan</span> <span>v{latestVersion}</span></h1>
+            <h1><span>Latest </span><span>Hartan</span> <span>v{latestVersion}</span></h1>
 
             <h2>All the latest Hartan Library news, straight from the team.
                 Follow us on
@@ -21,7 +21,7 @@ export default function Blogs() {
             <div className="blogCards">
                 {
                     Blogdata.map((blog, id) => {
-                        return <Card key={id} userCardStyle="blogCard" contentHeading={blog.heading} contentPara={blog.content} imgState={false} buttonText={<Link to={`${blog.id}`} style={{ textDecoration: "none", color: "#ffffff" }}>read more</Link>} />
+                        return <Card key={id} userCardStyle="blogCard" contentHeading={blog.heading} contentPara={blog.discription} imgState={false} buttonText={<Link to={`${blog.id}`} style={{ textDecoration: "none", color: "#ffffff" }}>read more</Link>} />
                     })
                 }
             </div>

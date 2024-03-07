@@ -13,6 +13,10 @@ html {
 body {
   background-color: rgb(4, 4, 26);
 }
+:root{
+  --PrimaryFontColor:#c4c3c3;
+  --bgColor:rgb(4, 4, 26);
+}
 
 .homePage {
   display: flex;
@@ -21,20 +25,19 @@ body {
 }
 
 .bgDark {
-  background-color: rgb(4, 4, 26);
+  background-color: var(--bgColor);
 }
 
 .colorWhite {
-  fill: #ffffff;
-  color: #c4c3c3;
+  color: var(--PrimaryFontColor);
 
   /* navbar link  */
   a {
-    color: #c4c3c3;
+    color: var(--PrimaryFontColor);
   }
 
   div li a {
-    color: #c4c3c3;
+    color: var(--PrimaryFontColor);
 
   }
 }
@@ -49,7 +52,9 @@ body {
 .none {
   display: none;
 }
-
+.colorSVG{
+  fill: var(--PrimaryFontColor);
+}
 .myBtn {
   padding: 1.5rem 2rem;
   font-size: 1.75rem;
@@ -78,13 +83,21 @@ body {
   border-bottom: 0.2rem solid #1e90ff;
 }
 
+/* navbar */
+.navbar{
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
 
 /* footer  */
 
 .footer {
-  box-shadow: 0px -3px 66px -4px rgba(20, 20, 20, 0.75);
+  box-shadow: none;
   margin-top: auto;
-  color: #c4c3c3;
+  color: var(--PrimaryFontColor);
 }
 
 .footerLinks {
@@ -105,9 +118,11 @@ body {
     span {
       gap: 0.4rem;
 
-      a {
-        color: #c4c3c3;
-        
+      a{
+        color: var(--PrimaryFontColor);
+      }
+      a:hover{
+        color: #ffffff;
       }
     }
   }
@@ -117,8 +132,18 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
+
   }
 }
+
+.socialIcon {
+  fill: var(--PrimaryFontColor);
+}
+.socialIcons:hover .socialIcon{
+  fill: #ffffff;
+}
+
+
 
 
 /* responsive */
