@@ -1,69 +1,8 @@
 import { useParams } from "react-router-dom"
-import { Navbar, Accordion, Button, Card, Carousel, Dropdown, Footer, Form, HeroSection, Popup, Sidemenu, Snippet, Statistics, Team, Testimonial } from "react-hartan"
 import "./Previews.css"
-
-const Components = [
-    {
-        id: "accordion",
-        elem: <Accordion />
-    },
-    {
-        id: "button",
-        elem: <Button userButtonStyle="giant" />
-    },
-    {
-        id: "card",
-        elem: <Card />
-    },
-    {
-        id: "carousel",
-        elem: <Carousel userCarouselStyle="carouselStyle" />
-    },
-    {
-        id: "dropdown",
-        elem: <Dropdown />
-    },
-    {
-        id: "footer",
-        elem: <Footer userFooterStyle="colorBlack" />
-    },
-    {
-        id: "form",
-        elem: <Form />
-    },
-    {
-        id: "hero",
-        elem: <HeroSection />
-    },
-    {
-        id: "navbar",
-        elem: <Navbar userLogoStyle="colorBlack" userHeaderStyle="fullWidth" />
-    },
-    {
-        id: "popup",
-        elem: <Popup />
-    },
-    {
-        id: "sidemenu",
-        elem: <Sidemenu userNavbarStyle="previewSidemenu" />
-    },
-    {
-        id: "snippet",
-        elem: <Snippet />
-    },
-    {
-        id: "statistics",
-        elem: <Statistics />
-    },
-    {
-        id: "team",
-        elem: <Team />
-    },
-    {
-        id: "testimonial",
-        elem: <Testimonial userTestimonialStyle="colorBlack" />
-    },
-];
+import { Components } from "../../Data/PreviewData.jsx"
+import { PreviewContent } from "../../Data/Preview.js";
+import { Snippet, Button } from "react-hartan";
 
 export default function Preview({ defaultIndex }) {
     const params = useParams();
@@ -71,13 +10,30 @@ export default function Preview({ defaultIndex }) {
 
     let index = Components.findIndex((obj) => obj.id === id);
 
+    let snippetText = <div>
+        <p>import {`{${PreviewContent[index]?.heading}}`} from "react-hartan-js"</p>
+        <p>function App() {`{`} </p>
+        <p> return {`(`}</p>
+        <p>{`<>`}</p>
+        <p>{`<${PreviewContent[index]?.heading} />`}</p>
+        <p>{`</>`}</p>
+        <p>{`)`}</p>
+        <p>{`}`}</p>
+        <p>{`export default App`}</p>
+    </div>
+
     return (
         <>
-            <h1>{Components[index].id.toUpperCase()}</h1>
+            <h1>{PreviewContent[index]?.heading?.toUpperCase()}</h1>
             <hr />
             {
                 Components[index === -1 ? defaultIndex : index]?.elem
             }
+            <div className="importCode">
+                <h2>{PreviewContent[index]?.content}</h2>
+                <Snippet userSnippetTextStyle="codeStyle" snippetSymbolState={false} snippetText={snippetText} userSnippetStyle={"snippetStyle"} />
+            </div>
+            <Button buttonText="Read Docs" />
         </>
     )
 }

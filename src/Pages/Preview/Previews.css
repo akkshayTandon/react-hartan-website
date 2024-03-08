@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
 .preview {
     display: flex;
     padding-top: 8rem;
@@ -7,24 +9,26 @@
 
 .sidebarHeight {
     height: 100vh;
-    top: 10rem;
+    margin-top: -1rem;
     position: static;
     width: fit-content;
-    background-color: #0e1823;
+    background-color: var(--bgColor);
+    border-radius: 0;
 }
 
 .aside {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 5rem;
     color: var(--PrimaryFontColor);
     width: 100%;
-    padding: 4rem 1rem;
+    padding: 4rem 0;
+    margin-left: 7rem;
 }
 
 .aside hr {
-    width: 100%;
+    width: 95%;
 }
 
 .aside h1 {
@@ -62,9 +66,23 @@
 
 
 
-
 .previewSidemenu {
-    position: static;
+    position: relative;
+    height: fit-content;
+
+    input[type=checkbox] {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 3.4rem;
+        z-index: 20;
+    }
+}
+
+.disable {
+    label {
+        display: none;
+    }
 }
 
 .colorBlack {
@@ -72,12 +90,40 @@
 }
 
 .giant {
-    padding: 3rem 5rem;
-    font-size: 4rem;
+    padding: 1rem 3rem;
+    font-size: 2.5rem;
 }
 
 .fullWidth {
     width: 100%;
+}
+
+.snippetStyle {
+    cursor: auto;
+
+    pre code {
+        span:nth-child(2) {
+            display: none;
+        }
+    }
+}
+
+.codeStyle div p {
+    font-family: 'Cascadia Code', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.importCode {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5rem;
+
+    h2 {
+        width: 75%;
+    }
 }
 
 @media(width<1024px) {
@@ -86,11 +132,42 @@
     }
 }
 
+@media(width<768px) {
+    .snippetStyle {
+        width: 40rem;
 
+        pre code {
+            span:nth-child(1) {
+                text-wrap: wrap;
+            }
+        }
+    }
+
+    .importCode {
+        margin-left: 0;
+    }
+}
+
+@media(width<400px) {
+    .snippetStyle {
+        width: 34rem;
+        padding: 1rem;
+
+        pre code {
+            span:nth-child(1) {
+                text-wrap: wrap;
+            }
+        }
+    }
+}
 
 @media(width<555px) {
     .carouselStyle {
         width: 24rem;
         height: 12rem;
+    }
+
+    .aside {
+        margin-left: 1rem;
     }
 }

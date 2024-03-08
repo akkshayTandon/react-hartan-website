@@ -1,5 +1,5 @@
 import { HeroSection, Button, Snippet } from "react-hartan"
-import FetchVersion from "../../../FetchVersion.js";
+import FetchVersion from "../../../Data/FetchVersion.js";
 
 export default function Hero() {
   const latestVersion = FetchVersion();

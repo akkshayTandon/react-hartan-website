@@ -1,14 +1,45 @@
-import { Form } from "react-hartan"
-import useForm from "react-hartan/Hooks/Form"
+import {  SimpleForm } from "react-hartan"
 import "./Contact.css"
 
 export default function Contact() {
+    const fieldsData = {
+        inputTag: [
+            {
+                inputType: "text",
+                inputId: "name",
+                inputName: "entry.342772218",
+                inputLabel: "Name",
+                required: true
+            },
+            {
+                inputType: "email",
+                inputId: "email",
+                inputName: "entry.1872587553",
+                inputLabel: "Email",
+                required: true
+            },
+            {
+                inputType: "number",
+                inputId: "phoneNo",
+                inputName: "entry.966279105",
+                inputLabel: "Contact Number",
+                required: true
+            }
+        ],
+        textareaTag: [
+            {
+                textareaId: "message",
+                textareaName: "entry.626841158",
+                textareaLabel: "Message",
+                required: true
+            }
+        ]
+    };
 
-    const [updateData, submit, submitted] = useForm("https://jsonplaceholder.typicode.com/posts");
 
     return (
-        <div className="contact">
-            <Form userFormCardStyle={"FormDark"} updateData={updateData} submit={submit} submitted={submitted} userTitleStyle="textWhite" userInputFieldStyle="inputField" userSubmittedStyle="submited" />
+        <div className="contact" data-aos="zoom-in" data-aos-duration="700">
+            <SimpleForm action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeWWhGEa-VKp8-zR_dvzmjRdGYISw3f-ZOF9WuUGjXgfgWmIA/formResponse" fields={fieldsData} userFormCardStyle={"FormDark"} userTitleStyle="textWhite" userInputFieldStyle="inputField" />
         </div>
     )
 }

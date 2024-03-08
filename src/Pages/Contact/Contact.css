@@ -7,7 +7,7 @@
 }
 
 .FormDark {
-    background-color: rgb(32, 31, 31);
+    background-color: var(--bgColor);
 }
 
 .textWhite {
@@ -19,13 +19,14 @@
         color: #ffffff;
         font-weight: 500;
     }
-    textarea{
+
+    textarea {
         color: #ffffff;
         font-weight: 500;
     }
 
     label {
-        background-color: #201F1F !important;
+        background-color: var(--bgColor) !important;
     }
 }
 
