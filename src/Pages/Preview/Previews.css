@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+
 
 .preview {
     display: flex;
@@ -109,7 +109,6 @@
 }
 
 .codeStyle div p {
-    font-family: 'Cascadia Code', sans-serif;
     margin-bottom: 1rem;
 }
 
