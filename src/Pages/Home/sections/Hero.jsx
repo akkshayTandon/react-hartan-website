@@ -7,7 +7,7 @@ export default function Hero() {
   const heroAbt = <span><span>A ready made solution for your next project.</span><span>Hartan is a UI component library built on React JS and distributed as a NPM package. It offers a collection of independent, well-documented resources designed to facilitate rapid website development.</span></span>;
 
 
-  const readDocs = <a href='https://hardiksingh.me' target='_blank'>Read Docs</a>;
+  const readDocs = <a href='https://hartans-organization.gitbook.io/hartan-docs/' target='_blank'>Read Docs</a>;
 
 
   return (

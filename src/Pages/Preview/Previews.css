@@ -1,4 +1,7 @@
-
+.userButtonStyle a{
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .preview {
     display: flex;
@@ -63,7 +66,6 @@
         transition: .25s;
     }
 }
-
 
 
 .previewSidemenu {
