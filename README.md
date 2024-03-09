@@ -1,8 +1,15 @@
-# React + Vite
+# Welcome 👋!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is Hartan?
 
-Currently, two official plugins are available:
+Hartan is a UI component library built on React JS and distributed as a NPM package. It offers a collection of independent, well-documented resources designed to facilitate rapid website development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We want to help developers to work more efficiently providing them with a simple yet customizable components library that helps them to build their websites rapidly without spending much time. Hartan presents clear and intuitive design principles, empowering users to easily customize and personalize their projects, ensuring that it fits well with the specific needs of the user.
+
+## What is this repository?
+
+This is the website for the Hartan Library, located [here](https://hartan.netlify.app).
+
+## Read More
+
+Learn more by reading over the [project details](https://github.com/akkshayTandon/react-hartan) !
