@@ -20,7 +20,7 @@ function App() {
       elem: <NavLink to="/contact" className={({ isActive }) => `${isActive && "active"}`}>Contact</NavLink>
     },
     {
-      elem: <NavLink to="https://hartans-organization.gitbook.io/hartan-docs/" className={({ isActive }) => `${isActive && "active"}`} target='_blank'>Docs</NavLink>
+      elem: <NavLink to="https://hartans-organization.gitbook.io/hartan-docs/" className={({ isActive }) => `${isActive && "active"}`}>Docs</NavLink>
     }
   ];
 

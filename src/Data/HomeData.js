@@ -19,18 +19,18 @@ export const features=[
 
 export const buildWithHartan=[
     {
-        linkSrc:"",
+        linkSrc:"https://hartan.netlify.app",
         imgSrc:"/screenshot/hartanSS.png",
         heading:"Hartan",
     },
     {
         linkSrc:"",
         imgSrc:"",
-        heading:"Hartan",
+        heading:"",
     },
     {
         linkSrc:"",
         imgSrc:"",
-        heading:"Hartan",
+        heading:"",
     },
 ];

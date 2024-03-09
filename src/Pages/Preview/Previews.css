@@ -1,4 +1,4 @@
-.userButtonStyle a{
+.userButtonStyle a {
     color: #ffffff;
     text-decoration: none;
 }
@@ -107,6 +107,10 @@
         span:nth-child(2) {
             display: none;
         }
+    }
+
+    div p {
+        font-family: 'Cascadia Code', sans-serif;
     }
 }
 
