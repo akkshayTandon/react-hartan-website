@@ -1,3 +1,11 @@
+<p align="center">
+  <a href="https://hartan.netlify.app">
+    <img src="/public/hartan.png" alt="Hartan Logo" width="150" height="165">
+  </a>
+</p>
+
+<h3 align="center">Hartan JS</h3>
+
 # Welcome 👋!
 
 ## What is Hartan?
@@ -12,4 +20,4 @@ This is the website for the Hartan Library, located [here](https://hartan.netlif
 
 ## Read More
 
-Learn more by reading over the [project details](https://github.com/akkshayTandon/react-hartan) !
+Learn more by reading over the [project details](https://github.com/hardiksinghmaurya/react-hartan) !
