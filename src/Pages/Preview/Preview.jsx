@@ -11,7 +11,7 @@ export default function Preview({ defaultIndex }) {
     let index = Components.findIndex((obj) => obj.id === id);
 
     let snippetText = <div>
-        <p>import {`{${PreviewContent[index]?.heading}}`} from "react-hartan-js"</p>
+        <p>import {`{${PreviewContent[index]?.heading}}`} from &quot;react-hartan&quot;</p>
         <p>function App() {`{`} </p>
         <p> return {`(`}</p>
         <p>{`<>`}</p>
@@ -20,7 +20,9 @@ export default function Preview({ defaultIndex }) {
         <p>{`)`}</p>
         <p>{`}`}</p>
         <p>{`export default App`}</p>
-    </div>
+    </div>;
+
+    let buttonText = <a href={PreviewContent[index]?.docsLink} target="_blank">Read Docs</a>;
 
     return (
         <>
@@ -31,9 +33,9 @@ export default function Preview({ defaultIndex }) {
             }
             <div className="importCode">
                 <h2>{PreviewContent[index]?.content}</h2>
-                <Snippet userSnippetTextStyle="codeStyle" snippetSymbolState={false} snippetText={snippetText} userSnippetStyle={"snippetStyle"} />
+                <Snippet userSnippetTextStyle="codeStyle" snippetSymbolState={false} snippetText={snippetText} userSnippetStyle="snippetStyle" />
             </div>
-            <Button buttonText="Read Docs" />
+            <Button buttonText={buttonText} userButtonStyle="userButtonStyle" />
         </>
     )
 }
