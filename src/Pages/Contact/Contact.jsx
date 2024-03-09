@@ -1,7 +1,9 @@
-import {  SimpleForm } from "react-hartan"
+import { SimpleForm } from "react-hartan"
+import { useEffect } from "react"
 import "./Contact.css"
 
 export default function Contact() {
+
     const fieldsData = {
         inputTag: [
             {
@@ -35,6 +37,10 @@ export default function Contact() {
             }
         ]
     };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 
     return (

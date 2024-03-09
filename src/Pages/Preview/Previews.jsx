@@ -2,6 +2,7 @@ import { Sidemenu } from "react-hartan";
 import { NavLink, Outlet } from "react-router-dom";
 import "./Previews.css"
 import { listData } from "../../Data/Previews";
+import { useEffect } from "react";
 
 
 export default function Previews() {
@@ -13,6 +14,9 @@ export default function Previews() {
         }
     });
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="preview">
