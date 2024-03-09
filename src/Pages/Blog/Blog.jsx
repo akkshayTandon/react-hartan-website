@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Blogdata } from "../../Data/Blogdata.js";
+import { Blogdata, getMonthName } from "../../Data/Blogdata.js";
 
 export default function Blog() {
     const params = useParams();
@@ -18,7 +18,7 @@ export default function Blog() {
 
             <main>
                 <div data-aos="fade-up" data-aos-duration="700">
-                    <p><i>published </i>4 March, 2024</p>
+                    <p><i>published </i>{blog?.published.date} {getMonthName[blog?.published.month]} {blog?.published.year}</p>
                     <h1>{blog?.heading}</h1>
                     <h2>{blog?.description}</h2>
                 </div>
