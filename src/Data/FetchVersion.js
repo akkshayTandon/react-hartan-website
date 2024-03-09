@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function FetchVersion() {
 
-    const [latestVersion, setLatestVersion] = useState(null);
+    const [latestVersion, setLatestVersion] = useState("");
     const [getData] = useFetch();
 
     async function getLatestVersion() {
