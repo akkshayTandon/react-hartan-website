@@ -22,7 +22,7 @@ export default function Preview({ defaultIndex }) {
         <p>{`export default App`}</p>
     </div>;
 
-    let buttonText = <a href={PreviewContent[index]?.docsLink} target="_blank">Read Docs</a>;
+    let buttonText = <a href={PreviewContent[index]?.docsLink}>Read Docs</a>;
 
     return (
         <>

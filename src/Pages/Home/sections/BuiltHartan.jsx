@@ -15,7 +15,7 @@ export default function BuiltHartan() {
           buildWithHartan.map((built, id) => {
             return <div key={id} data-aos="fade-up" data-aos-duration="1000">
               <Link to={built.linkSrc}>
-                <Card imgSrc={built.imgSrc} userButtonStyle="none" userContentStyle="contentPara" contentHeading={built.heading}/>
+                <Card imgSrc={built.imgSrc} imgAlt={built.heading} userButtonStyle="none" userContentStyle="contentPara" contentHeading={built.heading}/>
               </Link>
             </div>
           })

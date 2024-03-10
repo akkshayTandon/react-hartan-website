@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className='version' data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-center">
+      <div className='version' data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center">
         <Button buttonText={`version ${latestVersion}`} userButtonStyle="cursorNone" />
       </div>
 
@@ -20,7 +20,7 @@ export default function Hero() {
         <HeroSection userHeroSectionStyle="heroSpacing" userHeroContentStyle="colorWhite" heroAbout={heroAbt} imgState={false} userButtonStyle="none" data-aos="zoom-in" />
       </div>
 
-      <div className='buttons' data-aos="fade-up" data-aos-duration="1500">
+      <div className='buttons' data-aos="fade-up" data-aos-duration="1000">
         <Snippet userSnippetStyle="myBtn" />
         <Button buttonText={readDocs} userButtonStyle="myBtn" />
       </div>
