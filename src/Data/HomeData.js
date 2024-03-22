@@ -22,15 +22,5 @@ export const buildWithHartan=[
         linkSrc:"https://hartan.netlify.app",
         imgSrc:"/screenshot/hartanSS.png",
         heading:"Hartan",
-    },
-    {
-        linkSrc:"",
-        imgSrc:"",
-        heading:"",
-    },
-    {
-        linkSrc:"",
-        imgSrc:"",
-        heading:"",
-    },
+    }
 ];
