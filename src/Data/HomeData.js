@@ -24,6 +24,11 @@ export const buildWithHartan=[
         heading:"Hartan",
     },
     {
+        linkSrc:"https://hartan.netlify.app",
+        imgSrc:"/screenshot/hartanSS.png",
+        heading:"Hartan",
+    },
+    {
         linkSrc:"https://technoconnect.io",
         imgSrc:"/screenshot/technoconnect-screenshot.png",
         heading:"Technoconnect",
