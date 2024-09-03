@@ -28,4 +28,9 @@ export const buildWithHartan=[
         imgSrc:"/screenshot/technoconnect-screenshot.png",
         heading:"Technoconnect",
     },
+    {
+        linkSrc:"https://technoconnect.io",
+        imgSrc:"/screenshot/technoconnect-screenshot.png",
+        heading:"Technoconnect",
+    },
 ];
